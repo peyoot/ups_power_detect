@@ -3,8 +3,20 @@ This script can be used to auto-shutdown Debian/Ubuntu Server while UPS power su
 
 ## usage
 
+Ubuntu
 ```shell
 git clone https://github.com/peyoot/ups_power_detect.git
 cd ups_power_detect
+sudo chmod +x ./install.sh
 sudo ./install.sh
 ```
+
+Debian |PVE |Truenas
+```shell
+git clone https://github.com/peyoot/ups_power_detect.git
+cd ups_power_detect
+su -
+chmod +x ./install.sh
+./install.sh
+```
+
