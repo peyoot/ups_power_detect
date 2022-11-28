@@ -1,0 +1,1 @@
+# ups_power_detect
