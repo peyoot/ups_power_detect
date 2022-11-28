@@ -1,0 +1,13 @@
+[Unit]
+Description=Ping default network gateway to check power service
+After=network-online.target
+[Service]
+# Wait time if process hangs
+TimeoutStopSec=2m
+# Command to run
+ExecStart=/bin/bash -c '/usr/local/bin/power_detect.sh &'
+Type=simple
+KillMode=process
+KillSignal=SIGINT
+[Install]
+WantedBy=multi-user.target

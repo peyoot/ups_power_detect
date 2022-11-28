@@ -1,0 +1,11 @@
+[Unit]
+Description=Ping network gateway to check power status timer
+[Timer]
+# Uptime after it's first ran
+OnBootSec=1min
+# Wait time for next run
+OnUnitInactiveSec=3min
+Unit=ups-power-check.service
+Persistent=true
+[Install]
+WantedBy=multi-user.target
