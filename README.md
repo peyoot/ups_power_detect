@@ -20,3 +20,6 @@ chmod +x ./install.sh
 ./install.sh
 ```
 
+check if the timer/service is already running by:
+
+systemctl list-timers

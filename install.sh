@@ -6,6 +6,7 @@ chmod +x /usr/local/bin/power_detect.sh
 cp ups-power-check.service /etc/systemd/system/
 cp ups-power-check.timer /etc/systemd/system/
 echo 'ups-power-detect service and timer installed'
-rm -rf install.sh
-echo 'please reboot or run "systemctl start ups-power-detect.timer" to enable the service'
-
+#rm -rf install.sh
+systemctl enable ups-power-check.timer
+systemctl start ups-power-check.timer
+echo 'The daemon is running now'
