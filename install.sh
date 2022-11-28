@@ -1,5 +1,5 @@
 #!/bin/bash
-echo'The script will install the ups-power-detect service to your system now. make sure you run this scripts in root'
+echo 'The script will install the ups-power-detect service to your system now. make sure you run this scripts in root'
 
 cp power_detect.sh /usr/local/bin && echo 'power_detect.sh copied to /usr/local/bin'
 chmod +x /usr/local/bin/power_detect.sh
